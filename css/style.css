@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+* {
+   box-sizing: border-box;
+}
+
+
+body {
+   background-color: hsl(30, 38%, 92%);
+   font-size: 14px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Card Styling */
+.card {
+   display: grid;
+   margin: 0 30px 0 30px;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.product__img {
+   width: 100%;
+   min-height: 250px;
+   background-image: url('img/image-mobile.jpg');
+   background-size: cover;
+   background-position: center;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.product__details {
+   max-width: 100%;
+   /*height: 320px;*/
+   padding-bottom: 20px;
+   background-color: hsl(0, 0%, 100%);
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.product__details p {
+   padding: 0 20px 0 20px;
+   font-size: 13px;
+   color: #94a1b2;
+   line-height: 20px;
+}
+
+
+h3.product__title {
+   padding: 0 20px 0 20px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   color: #94a1b2;
+   font-size: 12px;
+}
+
+
+.product__details h1 {
+   padding: 0 20px 0 20px;
+   font-family: 'Fraunces', serif;
+   font-size: 25px;
+   color: #242629;
+}
+
+
+.product__details h3.product__price--reguler {
+   padding-left: 20px;
+   font-family: 'Fraunces', serif;
+   font-weight: 700;
+   font-size: 17px;
+   color: hsl(158, 36%, 37%);
+}
+
+
+.product__details span.product__price--discount {
+   font-size: 12px;
+   position: absolute;
+   text-decoration: line-through;
+   color: #94a1b2;
+   transform: translate(20px, 5px);
+}
+
+
+button {
+   width: 87%;
+   margin: 0 0 0 20px;
+   padding: 10px 0 10px 0;
+   border-radius: 8px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   background-color: hsl(158, 36%, 37%);
+   color: #fffffe;
+   font-weight: 700;
+   text-align: center;
+   font-size: 15px;
+}
+button i {
+   position: absolute;
+   transform: translate(-30px, -3px);
+}
+
+/* Responsive */
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  /* aturan CSS untuk tablet laptop dan landscape */
+  .product__img {
+     width: 100%;
+     height: 40rem;
+     background-image: url('img/image.jpg');
+     border-top-right-radius: 0;
+     border-bottom-left-radius: 15px;
+  }
+  
+  
+  .product__details {
+     /*height: 38rem;*/
+     border-bottom-left-radius: 0;
+     border-top-right-radius: 15px;
+  }
+  
+  
+  .product__details p {
+     font-size: 20px;
+     line-height: 30px;
+  }
+  
+  
+  h3.product__title {
+     font-size: 20px;
+     padding-top: 20px;
+  }
+  
+  
+  .product__details h1 {
+     font-size: 46px;
+  }
+  
+  
+  .product__details h3.product__price--reguler {
+     font-size: 30px;
+  }
+  
+  
+  .product__details span.product__price--discount {
+     font-size: 20px;
+  }
+  
+  
+  button {
+     padding: 20px 0 20px 0;
+     font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  /* Style yang ingin diterapkan pada desktop */
+  .product__img {
+     width: 100%;
+     height: 43rem;
+     background-image: url('img/image.jpg');
+     border-top-right-radius: 0;
+     border-bottom-left-radius: 15px;
+  }
+  
+  
+  .product__details {
+     border-bottom-left-radius: 0;
+     border-top-right-radius: 15px;
+  }
+  
+  
+  .product__details p {
+     font-size: 20px;
+     line-height: 30px;
+  }
+  
+  
+  h3.product__title {
+     font-size: 20px;
+     padding-top: 20px;
+  }
+  
+  
+  .product__details h1 {
+     font-size: 60px;
+  }
+  
+  
+  .product__details h3.product__price--reguler {
+     font-size: 30px;
+  }
+  
+  
+  .product__details span.product__price--discount {
+     font-size: 20px;
+  }
+  
+  
+  button {
+     padding: 20px 0 20px 0;
+     font-size: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 767px) and (orientation: landscape) {
+  /* Style yang ingin diterapkan pada hp mode landscape */
+  .product__img {
+     height: 40rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  /* styles for laptops with 1366 x 768 screen resolution */
+  .product__img {
+     height: 43rem;
+  }
+}
+
+
+
